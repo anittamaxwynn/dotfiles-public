@@ -1,0 +1,10 @@
+[user]
+  name = StringyDev
+  email = 107803920+stringydev@users.noreply.github.com 
+[core]
+	excludesfile = /Users/gravdev/.gitignore_global
+  editor = nvim
+[ghq]
+  root = ~/Developer/Repos/
+[color]
+	ui = true
