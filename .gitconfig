@@ -8,3 +8,5 @@
   root = ~/Developer/Repos/
 [color]
 	ui = true
+[init]
+	defaultBranch = main
