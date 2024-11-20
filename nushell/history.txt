@@ -1,0 +1,276 @@
+config nu
+$config nu
+cd .config
+cd nushell
+ls
+vim config.nu
+config
+config nu
+$env.EDITOR = 'nvim'
+config nu
+$env.EDITOR = 'vim'
+config nu
+$env.EDITOR = 'nvim'
+config nu
+config reload
+config
+config nu
+cd .config
+cd nushell
+ll
+ls
+nvim
+neovim
+nvim
+..
+ls
+cd kitty
+vim kitty.conf
+nvim
+exit
+nvim
+which nvim
+nvim
+path
+PATH
+$PATH
+cd .config
+cd nushell
+ls
+vim env.nu
+$env.PATH
+$$env.PATH = (<\n>  $env.PATH<\n>  | split row (char esep)<\n>  | append /usr/local/bin<\n>  | uniq<\n>)
+$env.PATH = (<\n>  $env.PATH<\n>  | split row (char esep)<\n>  | append /usr/local/bin<\n>  | uniq # filter so the paths are unique<\n>)
+$env.PATH
+brew list
+nvim
+$env.PATH
+$env.EDITOR = 'nvim'
+config nu
+exit
+vim
+cd .config]
+cd .confi
+cd .config
+cd nushell
+ls
+vim config.nu
+exit
+nvim
+cd .config/nushell
+ls
+vim config.nu
+alias nvim =  vim
+vim
+alias vim = nvim
+nvim
+nvim config.nu
+vim config.nu
+alias vim = nvim
+vim
+nvim
+vim env.nu
+vim config.nu
+scope aliases
+help aliases
+config nu
+$env.EDITOR = 'nvim'
+config nu
+config env.nu
+brew list
+cd .config/nushell
+vim env.nu
+exit
+vim .config/nushell/env.nu
+exit
+brew list
+q!
+cd .config/nushell
+nvim
+..
+ls
+cd nvim
+ls
+vim
+nvim
+..
+cd nushell
+nvim
+exit
+which python3
+$env.PATH
+config nu
+$env.EDITOR = 'nvim'
+config nu
+exit
+clear
+$env
+cd .config/nushell
+nvim
+mkdir ~/.cache/starship
+nvim
+exit
+cd 
+clear
+cd .config/nushell
+clear
+uv python
+q!
+clear
+ls
+clear
+q!
+cd .config/nushell
+nvim
+..
+cd
+cd Developer
+lls
+ls
+cd Projects
+ls
+cd NN-From-Scratch
+nvim
+ps
+clear
+l..
+..
+cd .config
+ls
+nvim starship.toml
+cleaar
+clear
+cd nushell
+ls
+nvim
+c
+clear
+exit
+cd .config
+lla
+config nu
+la
+ls
+ll
+la
+lt
+tree
+clear
+cd Library/Application Support
+cd Library
+lla
+cd  Application Support 
+cd "Application Support"
+lla
+cd nushell
+lla
+cat config.nu
+cleaaar
+c
+$nu.config-path
+cat config.nu source ~/.config/nushell/config.nu
+cd
+cd .config
+cd kitty
+vim
+$env
+:Q!
+clear
+vim
+clear
+..
+vim 
+clear
+vim
+clear
+~
+cd developer
+cd projects
+ll
+cd NN-From-Scratch
+c
+vim
+clear
+tmux
+clear
+tmux
+exit
+tmux
+exit
+tmux
+clear
+tmux
+exit
+echo $nu.shell<\n>
+exit
+tmux
+tmux kill-server
+cc
+c
+exiy
+cd .config/kitty
+vim
+exit
+tmux
+exit
+cd .config/kitty
+vim
+exit
+cd .config/kitty
+vim
+exit
+cd .config/kitty
+vim
+clear
+e
+clear
+c
+..
+cd tmux
+ll
+ls
+vim
+exit
+tmux
+q
+brew install yazi ffmpegthumbnailer sevenzip jq poppler fd ripgrep fzf zoxide imagemagick font-symbols-only-nerd-font
+c
+..
+cd dotfiles
+vim
+ll
+rm aerospace
+uv
+lla
+cd tmux
+vim
+exit
+tmux
+:
+c
+exit
+tmux
+tmux kill-server
+q
+clear
+..
+cd
+dotfiles
+cd dotfiles
+vim
+cd scripts
+vim
+:!
+q
+e
+vim
+,q
+q
+exit]
+exit
+tmux
+exit
+:q
+tmux
+vim
+cd dotfiles

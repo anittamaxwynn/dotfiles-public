@@ -1,0 +1,41 @@
+add_newline = false
+# A minimal left prompt
+format = """$directory$character"""
+palette = "rose-pine-moon"
+# move the rest of the prompt to the right
+right_format = """$all"""
+command_timeout = 1000
+
+[directory.substitutions]
+'~/tests/starship-custom' = 'work-project'
+
+[git_branch]
+format =  '[$symbol$branch(:$remote_branch)]($style)'
+
+[aws]
+format = '[$symbol(profile: "$profile" )(\(region: $region\) )]($style)'
+disabled = false
+style = 'bold blue'
+symbol = " "
+
+[golang]
+format = '[ ](bold cyan)'
+
+[kubernetes]
+symbol = '☸ '
+disabled = true
+detect_files = ['Dockerfile']
+format = '[$symbol$context( \($namespace\))]($style) '
+contexts = [
+  { context_pattern = "arn:aws:eks:us-west-2:577926974532:cluster/zd-pvc-omer", style = "green", context_alias = "omerxx", symbol = " " },
+]
+
+
+[palettes.rose-pine-moon]
+overlay = '#393552'
+love = '#eb6f92'
+gold = '#f6c177'
+rose = '#ea9a97'
+pine = '#3e8fb0'
+foam = '#9ccfd8'
+iris = '#c4a7e7'

@@ -1,0 +1,22 @@
+# theme
+include rose-pine.conf
+
+# font
+font_family      family="JetBrainsMono Nerd Font Mono"
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+font_size 22
+
+# background
+background_opacity 0.7
+background_blur 30
+
+# window / tab layout
+single_window_margin_width 0
+hide_window_decorations titlebar-and-corners
+tab_bar_style hidden
+
+# macos 
+macos_option_as_alt yes
+
