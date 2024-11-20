@@ -5,11 +5,15 @@ nvim/*
 !nvim/lua/**  
 
 # Tmux Configuration
-.tmux/plugins/*  
+tmux/plugins/*  
 
 # Karabiner Configuration
-.karabiner/assets/*  
-.karabiner/automatic_backups/*  
+karabiner/assets/*  
+karabiner/automatic_backups/*  
+
+# Nushell historu
+nushell/history.txt
+
 
 # Ignore all files starting with an underscore
 _*  
