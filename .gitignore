@@ -1,3 +1,16 @@
+# Neovim Configuration
+nvim/*  
+!nvim/init.lua  
+!nvim/lua/  
+!nvim/lua/**  
+
+# Tmux Configuration
+.tmux/plugins/*  
+
+# Karabiner Configuration
+.karabiner/assets/*  
+.karabiner/automatic_backups/*  
+
 # Ignore all files starting with an underscore
 _*  
 
@@ -47,29 +60,6 @@ Gemfile.lock
 # Node.js
 node_modules  
 bower_components  
-
-# Fish Shell
-fishd.*  
-
-# Neovim Configuration
-.config/nvim/*  
-!/.config/nvim/init.lua  
-!/.config/nvim/lua/  
-!/.config/nvim/lua/**  
-
-# Fish Shell Configuration
-.config/fish/fish_variables  
-.config/fish/conf.d/*  
-.config/fish/tide/*  
-.config/fish/functions/_*  
-.config/fish/functions/tide/*  
-
-# Tmux Configuration
-.config/tmux/plugins/*  
-
-# Karabiner Configuration
-.config/karabiner/assets/*  
-.config/karabiner/automatic_backups/*  
 
 # Additional Suggestions
 # Ignore all generated documentation

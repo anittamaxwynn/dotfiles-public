@@ -274,3 +274,20 @@ exit
 tmux
 vim
 cd dotfiles
+lazygit
+cd nvim
+lla
+rm README.md
+lla
+..
+cd kitty
+lla
+rm kitty.conf.bak
+lla
+..
+cd dotfiles
+vim
+vim .gitignore
+lazygit
+git rm -r --cached .
+git add .
