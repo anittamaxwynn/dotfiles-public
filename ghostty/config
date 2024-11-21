@@ -1,0 +1,12 @@
+font-size = 22
+mouse-hide-while-typing = true
+window-decoration = true
+keybind = global:cmd+s=toggle_quick_terminal
+
+theme = monokai soda
+
+cursor-style = block
+cursor-style-blink = true
+
+# background-opacity = 0.9
+# background-blur-radius = 20

@@ -230,9 +230,9 @@ $env.config = {
     }
 
     cursor_shape: {
-        emacs: line # block, underscore, line, blink_block, blink_underscore, blink_line, inherit to skip setting cursor shape (line is the default)
-        vi_insert: block # block, underscore, line, blink_block, blink_underscore, blink_line, inherit to skip setting cursor shape (block is the default)
-        vi_normal: underscore # block, underscore, line, blink_block, blink_underscore, blink_line, inherit to skip setting cursor shape (underscore is the default)
+        emacs: inherit  # block, underscore, line, blink_block, blink_underscore, blink_line, inherit to skip setting cursor shape (line is the default)
+        vi_insert: inherit  # block, underscore, line, blink_block, blink_underscore, blink_line, inherit to skip setting cursor shape (block is the default)
+        vi_normal: inherit # block, underscore, line, blink_block, blink_underscore, blink_line, inherit to skip setting cursor shape (underscore is the default)
     }
 
     color_config: $dark_theme # if you want a more interesting theme, you can replace the empty record with `$dark_theme`, `$light_theme` or another custom record
@@ -898,12 +898,14 @@ $env.config = {
     ]
 }
 
-# aliases
-alias lla = ls --all
+alias l = ls --all
 alias c = clear
 alias ll = ls -l
 alias lt = eza --tree --level=2 --long --icons --git
-alias vim = nvim
-alias q = exit
+alias v = nvim
+alias as = aerospace
+alias gh = ghostty
+
+source ~/.config/nushell/env.nu
 
 use ~/.cache/starship/init.nu
