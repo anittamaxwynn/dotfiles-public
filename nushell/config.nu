@@ -902,9 +902,13 @@ alias l = ls --all
 alias c = clear
 alias ll = ls -l
 alias lt = eza --tree --level=2 --long --icons --git
-alias v = nvim
+alias vim = nvim
 alias as = aerospace
 alias gh = ghostty
+alias "ghtheme" = gh +list-themes
+alias "ghconfig" = vim ~/.config/ghostty/config
+alias "nuconfig" = vim ~/.config/nushell/config.nu
+alias "nuenv" = vim ~/.config/nushell/env.nu
 
 source ~/.config/nushell/env.nu
 
