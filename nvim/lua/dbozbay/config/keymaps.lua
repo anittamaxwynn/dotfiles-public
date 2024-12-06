@@ -2,7 +2,7 @@ local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 
 -- Exit insert mode
-keymap.set("i", "jk", "<ESC>")
+keymap.set("i", "kj", "<ESC>")
 
 -- Increment/decrement
 keymap.set("n", "+", "<C-a>")

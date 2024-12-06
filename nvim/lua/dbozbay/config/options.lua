@@ -2,7 +2,7 @@ vim.g.mapleader = " "
 
 local opt = vim.opt -- for conciseness
 
-opt.guicursor = "n:blinkon1"
+opt.guicursor = ""
 
 opt.relativenumber = true -- show relative line numbers
 opt.number = true -- shows absolute line number on cursor line (when relative number is on)
@@ -23,8 +23,6 @@ opt.termguicolors = true
 
 opt.scrolloff = 8
 opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
-
-opt.clipboard:append("unnamedplus") -- use system clipboard as default register
 
 opt.splitright = true -- split vertical window to the right
 opt.splitbelow = true -- split horizontal window to the bottom

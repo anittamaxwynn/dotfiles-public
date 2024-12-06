@@ -1,2 +1,2 @@
-require("stringydev.config")
-require("stringydev.lazy")
+require("dbozbay.config")
+require("dbozbay.lazy")
