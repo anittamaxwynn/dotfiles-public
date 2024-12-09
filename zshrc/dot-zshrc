@@ -1,7 +1,6 @@
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 export EDITOR=/usr/local/bin/nvim
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Ghostty.app/Contents/MacOS
 export XDG_CONFIG_HOME=$HOME/.config
 
 # Git
