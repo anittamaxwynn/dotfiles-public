@@ -40,6 +40,9 @@ alias ltree="eza --tree --level=2  --icons --git"
 # LAZYGIT
 alias lg="lazygit"
 
+# ZELLIJ
+alias z="zellij"
+
 # AUTOSUGGESTIONS & SYNTAX HIGHLIGHTING
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
