@@ -1,5 +1,4 @@
 eval "$(starship init zsh)"
-eval "$(uv generate-shell-completion zsh)"
 
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 export EDITOR=/usr/local/bin/nvim
@@ -38,6 +37,12 @@ alias ls="eza -l --icons --git -a"
 alias lt="eza --tree --level=2 --long --icons --git"
 alias ltree="eza --tree --level=2  --icons --git"
 
+# LAZYGIT
+alias lg="lazygit"
+
 # AUTOSUGGESTIONS & SYNTAX HIGHLIGHTING
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+
+# Created by `pipx` on 2024-12-16 16:02:12
+export PATH="$PATH:/Users/dbozbay/.local/bin"
