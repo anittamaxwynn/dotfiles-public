@@ -10,7 +10,7 @@ return {
 
 		lualine.setup({
 			options = {
-				theme = "ayu",
+				-- theme = "ayu",
 				icons_enabled = true,
 			},
 			sections = {

@@ -11,7 +11,7 @@ return {
 			opt = {
 				integrations = {
 					telescope = false,
-					lualine = true,
+					-- lualine = true,
 					lsp_semantics_token = true,
 					nvim_cmp = true,
 					dap_nvim = true,
