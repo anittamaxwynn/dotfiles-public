@@ -5,7 +5,7 @@
 	excludesfile = ~/.gitignore_global
   editor = nvim
 [ghq]
-  root = ~/Developer/Repos/
+  root = ~/developer/ghq
 [color]
 	ui = true
 [init]
