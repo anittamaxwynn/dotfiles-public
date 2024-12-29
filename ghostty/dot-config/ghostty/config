@@ -9,7 +9,7 @@ mouse-hide-while-typing = true
 theme = catppuccin-mocha
 
 font-family = BlexMono Nerd Font Mono
-font-size = 30
+font-size = 22
 
 cursor-style = block
 cursor-style-blink = true
