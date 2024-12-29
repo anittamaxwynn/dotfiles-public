@@ -7,19 +7,12 @@ return {
 		{ "hrsh7th/cmp-nvim-lsp" }, -- Completion source for LSP
 		{ "hrsh7th/cmp-buffer" }, -- Completion source for text in buffer
 		{ "hrsh7th/cmp-path" }, -- Completion source for file system paths
-		{ "L3MON4D3/LuaSnip", version = "v2.*", build = "make install_jsregexp" }, -- Snippet engine
-		{ "saadparwaiz1/cmp_luasnip" }, -- Completion source for snippets
-		{ "rafamadriz/friendly-snippets" }, -- Useful snippets
 		{ "onsails/lspkind.nvim" }, -- VS-code like pictograms
 	},
 	config = function()
 		-- Setup autocomplete and snippet engines
 		local cmp = require("cmp")
-		local luasnip = require("luasnip")
 		local lspkind = require("lspkind")
-
-		-- Load friendly-snippets
-		require("luasnip.loaders.from_vscode").lazy_load()
 
 		cmp.setup({
 			completion = {
@@ -27,7 +20,6 @@ return {
 			},
 			sources = {
 				{ name = "nvim_lsp" }, -- LSP completions first for language-specific suggestions
-				{ name = "luasnip" }, -- Snippets are useful after language-specific completions
 				{ name = "buffer" }, -- Buffer completions (local text in the file)
 				{ name = "path" }, -- Path completions (typically last, for file path suggestions)
 			},
@@ -40,11 +32,6 @@ return {
 				["<C-e>"] = cmp.mapping.abort(), -- close completion window
 				["<CR>"] = cmp.mapping.confirm({ select = false }),
 			}),
-			snippet = {
-				expand = function(args)
-					luasnip.lsp_expand(args.body)
-				end,
-			},
 
 			window = {
 				documentation = cmp.config.window.bordered(),
@@ -76,7 +63,6 @@ return {
 				local bufmap = function(mode, lhs, rhs)
 					vim.keymap.set(mode, lhs, rhs, { buffer = true })
 				end
-
 				bufmap("n", "K", "<cmd>lua vim.lsp.buf.hover()<cr>")
 				bufmap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<cr>")
 				bufmap("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<cr>")

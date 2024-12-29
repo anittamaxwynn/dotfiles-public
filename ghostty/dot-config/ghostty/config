@@ -1,21 +1,57 @@
-theme = JetBrains Darcula
+macos-auto-secure-input = true
+macos-window-shadow = false
+macos-icon = custom-style
+macos-icon-frame = beige
+macos-icon-ghost-color = yellow
+macos-icon-screen-color = purple,maroon
+mouse-hide-while-typing = true
+
+theme = catppuccin-mocha
 
 font-family = BlexMono Nerd Font Mono
-font-size = 22
+font-size = 30
 
-macos-window-shadow = false
-shell-integration-features = no-cursor
-
-macos-icon = custom-style
-macos-icon-frame = plastic
-macos-icon-screen-color = ffc0cb
-macos-icon-ghost-color = 00ff00
 cursor-style = block
 cursor-style-blink = true
 cursor-color = ffffff
 
-mouse-hide-while-typing = true
-
-window-padding-x = 10
-window-padding-y = 10
+window-save-state = always
 window-padding-balance = true
+window-padding-x = 13
+window-padding-y = 13
+
+shell-integration-features = no-cursor
+quit-after-last-window-closed = true
+
+auto-update-channel = tip
+
+keybind = ctrl+a>n=new_window
+keybind = ctrl+a>r=reload_config
+keybind = ctrl+a>x=close_surface
+
+keybind = ctrl+a>t=new_tab
+keybind = ctrl+a>]=next_tab
+keybind = ctrl+a>[=previous_tab
+
+keybind = ctrl+a>/=new_split:right
+keybind = ctrl+a>-=new_split:down
+
+keybind = ctrl+a>j=goto_split:bottom
+keybind = ctrl+a>k=goto_split:top
+keybind = ctrl+a>h=goto_split:left
+keybind = ctrl+a>l=goto_split:right
+
+keybind = ctrl+a>z=toggle_split_zoom
+keybind = ctrl+a>enter=equalize_splits
+
+keybind = ctrl+cmd+h=resize_split:left,20
+keybind = ctrl+cmd+l=resize_split:right,20
+keybind = ctrl+cmd+j=resize_split:down,20
+keybind = ctrl+cmd+k=resize_split:up,20
+
+copy-on-select = clipboard
+
+
+
+
+
