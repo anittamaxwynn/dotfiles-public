@@ -9,13 +9,12 @@ return {
 		gitbrowse = { enabled = true },
 		lazygit = { enabled = true },
 		notifier = { enabled = true }, --TODO: look at lsp progress
-    notify = { enabled = true },
-    --TODO: add rename here
-    scroll = { enabled = true },
-    statuscolumn = { enabled = true },
-
-
-
+		notify = { enabled = true },
+		git = { enabled = true },
+		--TODO: add rename here
+		scroll = { enabled = true },
+		statuscolumn = { enabled = true },
+		words = { enabled = true },
 	},
 	keys = {
 		{
@@ -34,12 +33,30 @@ return {
 			desc = "Lazygit",
 		},
 
-    {
-      "<leader>n",
-      function()
-        Snacks.notifier.get_history()
-      end,
-      desc = "Notifier History",
-    }
+		{
+			"<leader>n",
+			function()
+				Snacks.notifier.show_history()
+			end,
+			desc = "Notifier History",
+		},
+
+		{
+			"]]",
+			function()
+				Snacks.words.jump(vim.v.count1)
+			end,
+			desc = "Next Reference",
+			mode = { "n", "t" },
+		},
+
+		{
+			"[[",
+			function()
+				Snacks.words.jump(-vim.v.count1)
+			end,
+			desc = "Previous Reference",
+			mode = { "n", "t" },
+		},
 	},
 }
