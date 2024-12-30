@@ -9,6 +9,7 @@ return {
 		local lazy_status = require("lazy.status") -- to configure lazy pending updates count
 
 		lualine.setup({
+      theme = "rose-pine",
 			options = {
 				icons_enabled = true,
 			},
