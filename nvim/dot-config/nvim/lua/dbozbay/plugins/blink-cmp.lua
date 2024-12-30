@@ -27,7 +27,7 @@ return {
 			},
 
 			menu = {
-				border = "rounded",
+				-- border = "rounded",
 				-- Label text with lsp source
 				draw = {
 					treesitter = { "lsp" },

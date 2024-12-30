@@ -6,12 +6,9 @@ macos-icon-ghost-color = yellow
 macos-icon-screen-color = purple,maroon
 mouse-hide-while-typing = true
 
+theme = Kanagawa Wave
 
-background-opacity = 0.9
-background-blur-radius = 30
-theme = catppuccin-mocha
-
-font-family = BlexMono Nerd Font Mono
+#font-family = BlexMono Nerd Font Mono
 font-size = 22
 
 cursor-style = block

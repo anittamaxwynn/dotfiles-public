@@ -4,6 +4,9 @@ export STARSHIP_CONFIG=~/.config/starship/starship.toml
 export EDITOR=/usr/local/bin/nvim
 export XDG_CONFIG_HOME=$HOME/.config
 
+# GHOSTTY
+alias glt="ghostty +list-themes"
+
 # Git
 alias gc="git commit -m"
 alias gca="git commit -a -m"
