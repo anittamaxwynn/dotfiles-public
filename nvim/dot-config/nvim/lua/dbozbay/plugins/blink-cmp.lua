@@ -5,10 +5,8 @@ return {
 	opts = {
 		keymap = {
 			preset = "default",
-
 			["<C-u>"] = { "scroll_documentation_up", "fallback" },
 			["<C-d>"] = { "scroll_documentation_down", "fallback" },
-			["<CR>"] = { "accept", "fallback" },
 		},
 
 		appearance = {
@@ -29,7 +27,7 @@ return {
 			},
 
 			menu = {
-				border = "single",
+				border = "rounded",
 				-- Label text with lsp source
 				draw = {
 					treesitter = { "lsp" },
@@ -40,14 +38,14 @@ return {
 			documentation = {
 				auto_show = true,
 				auto_show_delay_ms = 200,
-				window = { border = "single" },
+				window = { border = "rounded" },
 			},
 		},
 
 		-- Experimental signature help support
 		signature = {
 			enabled = true,
-			window = { border = "single" },
+			window = { border = "rounded" },
 		},
 	},
 }
