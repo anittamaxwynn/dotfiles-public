@@ -14,10 +14,10 @@ keymap.set("n", "sv", ":vsplit<CR>", opts)
 keymap.set("n", "sd", ":close<CR>", opts)
 
 -- Move window
-keymap.set("n", "sh", "<C-w>h")
-keymap.set("n", "sk", "<C-w>k")
-keymap.set("n", "sj", "<C-w>j")
-keymap.set("n", "sl", "<C-w>l")
+keymap.set("n", "<C-h>", "<C-w>h")
+keymap.set("n", "<C-k>", "<C-w>k")
+keymap.set("n", "<C-j>", "<C-w>j")
+keymap.set("n", "<C-l>", "<C-w>l")
 
 -- Tabs
 keymap.set("n", "tn", ":tabnew<CR>")
