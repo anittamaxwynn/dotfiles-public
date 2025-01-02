@@ -4,6 +4,7 @@ return {
 	opts = {
 		styles = {
 			transparency = true,
+      italic = false,
 		},
 	},
 	config = function(_, opts)
