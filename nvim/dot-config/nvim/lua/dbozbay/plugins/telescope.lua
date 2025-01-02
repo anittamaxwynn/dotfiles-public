@@ -23,16 +23,14 @@ return {
 					},
 				},
 			},
-			pickers = {
-				find_files = { no_ignore = true },
-			},
 		})
 
 		require("telescope").load_extension("fzf")
 
-		vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find files (Root Dir)" })
-		vim.keymap.set("n", "<leader>fg", "<cmd>Telescope git_files<cr>", { desc = "Find files (git-files)" })
-		vim.keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Live grep" })
+		vim.keymap.set("n", ";f", "<cmd>Telescope find_files<cr>", { desc = "Find files (Root Dir)" })
+		vim.keymap.set("n", ";g", "<cmd>Telescope git_files<cr>", { desc = "Find files (git-files)" })
+		vim.keymap.set("n", ";s", "<cmd>Telescope live_grep<cr>", { desc = "Live grep" })
+
 		vim.keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Recent files" })
 		vim.keymap.set("n", "<leader>fd", "<cmd>Telescope diagnostics<cr>", { desc = "Find diagnostics" })
 		vim.keymap.set("n", "<leader>fk", "<cmd>Telescope keymaps<cr>", { desc = "Find key maps" })

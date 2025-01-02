@@ -8,7 +8,7 @@ mouse-hide-while-typing = true
 
 theme = rose-pine
 
-#font-family = BlexMono Nerd Font Mono
+font-family = JetBrainsMono Nerd Font Mono
 font-size = 22
 
 cursor-style = block
@@ -49,7 +49,6 @@ keybind = ctrl+cmd+l=resize_split:right,20
 keybind = ctrl+cmd+j=resize_split:down,20
 keybind = ctrl+cmd+k=resize_split:up,20
 
-copy-on-select = clipboard
 
 
 

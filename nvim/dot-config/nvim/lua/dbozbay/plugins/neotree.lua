@@ -45,7 +45,7 @@ return {
 		},
 	},
 	keys = {
-		{ "<leader>e", "<cmd>Neotree toggle<CR>", desc = "Toggle Neo-tree" },
+		{ ";e", "<cmd>Neotree toggle<CR>", desc = "Toggle Neo-tree" },
 	},
 	config = function(_, opts)
 		require("neo-tree").setup(opts)
