@@ -6,9 +6,9 @@ macos-icon-ghost-color = yellow
 macos-icon-screen-color = purple,maroon
 mouse-hide-while-typing = true
 
-theme = rose-pine
+theme = ayu
 
-font-family = JetBrainsMono Nerd Font Mono
+font-family = BlexMono Nerd Font Mono
 font-size = 22
 
 cursor-style = block
@@ -16,9 +16,9 @@ cursor-style-blink = true
 cursor-color = ffffff
 
 window-save-state = always
-window-padding-balance = true
-window-padding-x = 13
-window-padding-y = 13
+#window-padding-balance = true
+#window-padding-x = 13
+#window-padding-y = 13
 
 shell-integration-features = no-cursor
 quit-after-last-window-closed = true

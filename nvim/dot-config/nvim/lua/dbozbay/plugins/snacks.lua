@@ -13,7 +13,7 @@ return {
 		git = { enabled = true },
 		--TODO: add rename here
 		scroll = { enabled = true },
-		statuscolumn = { enabled = true },
+		-- statuscolumn = { enabled = true },
 		words = { enabled = true },
 		styles = {
 			enabled = true,
