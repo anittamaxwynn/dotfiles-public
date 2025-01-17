@@ -10,11 +10,11 @@ return {
 				SignColumn = { bg = "None" },
 				Folded = { bg = "None" },
 				FoldColumn = { bg = "None" },
-				CursorLine = { bg = "None" },
+				-- CursorLine = { bg = "None" },
 				CursorColumn = { bg = "None" },
 				VertSplit = { bg = "None" },
 			},
 		})
-    vim.cmd("colorscheme ayu")
+    -- vim.cmd("colorscheme ayu")
 	end,
 }

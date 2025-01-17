@@ -9,7 +9,7 @@ return {
 		local lazy_status = require("lazy.status") -- to configure lazy pending updates count
 
 		lualine.setup({
-      theme = "rose-pine",
+      theme = "ayu",
 			options = {
 				icons_enabled = true,
 			},
@@ -31,7 +31,7 @@ return {
 					{
 						"diagnostics",
 						sources = { "nvim_diagnostic" },
-						-- symbols = { error = " ", warn = " ", info = " ", hint = " " },
+						symbols = { error = " ", warn = " ", info = " ", hint = " " },
 					},
 					-- {
 					-- 	"diff",
