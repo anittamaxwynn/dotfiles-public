@@ -43,6 +43,9 @@ alias ltree="eza --tree --level=2  --icons --git"
 # LAZYGIT
 alias lg="lazygit"
 
+# STOW
+alias stow-all="stow */ --dotfiles"
+alias stow-rm-all="stow -D */ --dotfiles"
 
 # AUTOSUGGESTIONS & SYNTAX HIGHLIGHTING
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
