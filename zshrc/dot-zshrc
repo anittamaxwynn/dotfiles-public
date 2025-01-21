@@ -50,3 +50,4 @@ source $(brew --prefix)/share/zsh-fast-syntax-highlighting/fast-syntax-highlight
 
 # Created by `pipx` on 2024-12-16 16:02:12
 export PATH="$PATH:/Users/dbozbay/.local/bin"
+export PATH="/usr/local/opt/llvm/bin:$PATH"

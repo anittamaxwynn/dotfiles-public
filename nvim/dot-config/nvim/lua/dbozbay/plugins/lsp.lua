@@ -1,22 +1,29 @@
 return {
 	"neovim/nvim-lspconfig",
-	dependencies = { "saghen/blink.cmp" },
+	dependencies = {
+		"folke/lazydev.nvim",
+		ft = "lua",
+		opts = {
+			library = {
+				{ path = "${3rd}/luv/library", words = { "vim%.uv" } },
+			},
+		},
+	},
+
 	config = function()
 		local capabilities = require("blink.cmp").get_lsp_capabilities()
 		local lspconfig = require("lspconfig")
 
-		lspconfig["lua_ls"].setup({
+		lspconfig.lua_ls.setup({
 			capabilities = capabilities,
 			settings = {
 				Lua = {
-					diagnostics = {
-						globals = { "vim" },
-					},
+					diagnostics = { globals = { "vim" } },
 				},
 			},
 		})
 
-		lspconfig["pyright"].setup({
+		lspconfig.pyright.setup({
 			capabilities = capabilities,
 			settings = {
 				pyright = {
@@ -33,13 +40,9 @@ return {
 		})
 
 		-- Disable conflicting capabilities ruff and pyright
-		lspconfig["ruff"].setup({
-			capabilities = capabilities,
-			on_attach = function(client, buffer)
-				client.server_capabilities.hoverProvider = false
-				client.server_capabilities.renameProvider = false
-			end,
-		})
+		lspconfig.ruff.setup({ capabilities = capabilities })
+
+		lspconfig.clangd.setup({ capabilities = capabilities })
 
 		-- LSP Keymaps
 		vim.api.nvim_create_autocmd("LspAttach", {
@@ -94,6 +97,21 @@ return {
 				opts.desc = "Restart LSP"
 				keymap.set("n", "<leader>lr", ":LspRestart<CR>", opts)
 			end,
+		})
+
+		vim.api.nvim_create_autocmd("LspAttach", {
+			group = vim.api.nvim_create_augroup("lsp_attach_disable_ruff_hover", { clear = true }),
+			callback = function(args)
+				local client = vim.lsp.get_client_by_id(args.data.client_id)
+				if client == nil then
+					return
+				end
+				if client.name == "ruff" then
+					-- Disable hover in favor of Pyright
+					client.server_capabilities.hoverProvider = false
+				end
+			end,
+			desc = "LSP: Disable hover capability from Ruff",
 		})
 
 		-- Diagnostic signs
