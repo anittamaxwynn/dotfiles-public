@@ -5,7 +5,7 @@ macos-icon-frame = beige
 macos-icon-ghost-color = ff7279
 macos-icon-screen-color = 080c10
 
-theme = gruvbox-material
+#theme = gruvbox-material
 background = 080c10
 
 #font-family = BlexMono Nerd Font Mono
