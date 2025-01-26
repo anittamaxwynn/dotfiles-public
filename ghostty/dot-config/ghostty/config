@@ -5,8 +5,8 @@ macos-icon-frame = beige
 macos-icon-ghost-color = ff7279
 macos-icon-screen-color = 080c10
 
-theme = xcodedarkhc
-#background = 080c10
+theme = gruvbox-material
+background = 080c10
 
 font-family = zed mono
 font-size = 22
