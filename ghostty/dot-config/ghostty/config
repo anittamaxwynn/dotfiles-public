@@ -5,18 +5,17 @@ macos-icon-frame = beige
 macos-icon-ghost-color = ff7279
 macos-icon-screen-color = 080c10
 
-theme = gruvbox-material
-background = 080c10
+theme = Atom
+background = 16161a
 
-font-family = zed mono
-font-size = 22
+font-family = Zed Mono
+font-size = 26
 
 cursor-style = block
 cursor-style-blink = true
 
 window-save-state = always
 window-padding-balance = true
-window-colorspace= display-p3
 
 shell-integration-features = no-cursor
 quit-after-last-window-closed = true
@@ -51,9 +50,3 @@ keybind = ctrl+cmd+j=resize_split:down,20
 keybind = ctrl+cmd+k=resize_split:up,20
 
 copy-on-select = clipboard
-
-
-
-
-
-

@@ -7,6 +7,7 @@ return {
 	config = function()
 		local lualine = require("lualine")
 		local lazy_status = require("lazy.status") -- to configure lazy pending updates count
+    local api = require("supermaven-nvim.api")
 
 		lualine.setup({
       theme = "ayu",
@@ -33,6 +34,12 @@ return {
 						sources = { "nvim_diagnostic" },
 						symbols = { error = " ", warn = " ", info = " ", hint = " " },
 					},
+          {
+            function()
+              if api.is_running() then return "Supermaven ON" else return "Supermaven OFF" end
+            end,
+            color = { fg = "#ff9e64" },
+          }
 					-- {
 					-- 	"diff",
 					-- 	source = function()

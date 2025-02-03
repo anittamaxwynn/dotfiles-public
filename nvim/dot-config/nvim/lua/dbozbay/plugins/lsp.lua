@@ -42,7 +42,19 @@ return {
 		-- Disable conflicting capabilities ruff and pyright
 		lspconfig.ruff.setup({ capabilities = capabilities })
 
-		lspconfig.clangd.setup({ capabilities = capabilities })
+		lspconfig.clangd.setup({
+			capabilities = capabilities,
+			cmd = {
+				"clangd",
+				-- "--background-index",
+				"--clang-tidy",
+				-- "--header-insertion=iwyu",
+				-- "--completion-style=detailed",
+				-- "--function-arg-placeholders",
+				-- "-j4",
+				"--fallback-style=webkit",
+			},
+		})
 
 		-- LSP Keymaps
 		vim.api.nvim_create_autocmd("LspAttach", {
@@ -115,10 +127,10 @@ return {
 		})
 
 		-- Diagnostic signs
-		local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
-		for type, icon in pairs(signs) do
-			local hl = "DiagnosticSign" .. type
-			vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
-		end
+		-- local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
+		-- for type, icon in pairs(signs) do
+		-- 	local hl = "DiagnosticSign" .. type
+		-- 	vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
+		-- end
 	end,
 }
