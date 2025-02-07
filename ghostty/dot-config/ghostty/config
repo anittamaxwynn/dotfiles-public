@@ -4,9 +4,9 @@ macos-icon = custom-style
 macos-icon-frame = beige
 macos-icon-ghost-color = ff7279
 macos-icon-screen-color = 080c10
+macos-option-as-alt = left
 
-theme = Atom
-background = 16161a
+theme = jellybeans
 
 font-family = Zed Mono
 font-size = 26

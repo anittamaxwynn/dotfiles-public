@@ -1,36 +1,41 @@
-vim.g.mapleader = " "
-
-local opt = vim.opt -- for conciseness
-
-opt.relativenumber = true -- show relative line numbers
-opt.number = true -- shows absolute line number on cursor line (when relative number is on)
-
-opt.tabstop = 4 -- 2 spaces for tabs (prettier default)
-opt.shiftwidth = 4 -- 2 spaces for indent width
-opt.expandtab = true -- expand tab to spaces
-opt.autoindent = true -- copy indent from current line when starting new one
-
-opt.cursorline = true
-opt.guicursor = ""
-
-opt.wrap = false -- disable line wrapping
-
-opt.ignorecase = true -- ignore case when searching
-opt.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
-opt.hlsearch = false
-opt.incsearch = true
-
-opt.termguicolors = true
-
-opt.scrolloff = 8
-opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
-
-opt.splitright = true -- split vertical window to the right
-opt.splitbelow = true -- split horizontal window to the bottom
-
-opt.swapfile = false
-opt.backup = false
+--stylua: ignore start
 
 
+-- Global editor settings ===================================================
+vim.g.mapleader      = " "
+vim.g.maplocalleader = " "
+vim.g.have_nerd_font = true
 
-opt.clipboard = "unnamedplus"
+-- Option settings ==========================================================
+vim.opt.relativenumber       = true
+vim.opt.number               = true
+
+vim.opt.smartindent          = true
+vim.opt.expandtab            = true
+
+vim.opt.shiftwidth           = 4
+vim.opt.tabstop              = 4
+vim.opt.softtabstop          = 4
+
+vim.opt.smartcase            = true
+vim.opt.ignorecase           = true
+
+vim.opt.hlsearch             = false
+vim.opt.incsearch            = true
+
+vim.opt.clipboard           = "unnamedplus"
+vim.opt.conceallevel        = 2
+vim.opt.cursorline          = true
+vim.opt.confirm             = true
+
+vim.opt.splitbelow          = true
+vim.opt.splitright          = true
+
+vim.opt.wrap                = false
+
+vim.opt.termguicolors       = true
+
+vim.opt.swapfile            = false
+vim.opt.backup              = false
+
+--stylua: ignore end
