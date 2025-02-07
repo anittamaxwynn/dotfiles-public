@@ -26,6 +26,7 @@ vim.opt.incsearch            = true
 vim.opt.clipboard           = "unnamedplus"
 vim.opt.conceallevel        = 2
 vim.opt.cursorline          = true
+vim.opt.guicursor           = ""
 vim.opt.confirm             = true
 
 vim.opt.splitbelow          = true

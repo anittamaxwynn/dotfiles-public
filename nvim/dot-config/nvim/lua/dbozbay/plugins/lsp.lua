@@ -67,33 +67,17 @@ return {
                 -- See `:help vim.lsp.*` for documentation on any of the below functions
                 local opts = { buffer = ev.buf, silent = true }
 
-                -- set keybinds
-                opts.desc = "Show LSP references"
-                keymap.set("n", "gr", "<cmd>Telescope lsp_references<CR>", opts)
-
                 opts.desc = "Go to declaration"
                 keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
 
                 opts.desc = "Show signature_help"
                 keymap.set("n", "gs", vim.lsp.buf.signature_help, opts)
 
-                opts.desc = "Show LSP definitions"
-                keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", opts)
-
-                opts.desc = "Show LSP implementations"
-                keymap.set("n", "gi", "<cmd>Telescope lsp_implementations<CR>", opts)
-
-                opts.desc = "Show LSP type definitions"
-                keymap.set("n", "gt", "<cmd>Telescope lsp_type_definitions<CR>", opts)
-
                 opts.desc = "See available code actions"
                 keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts)
 
                 opts.desc = "Smart rename"
                 keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
-
-                opts.desc = "Show buffer diagnostics"
-                keymap.set("n", "<leader>D", "<cmd>Telescope diagnostics bufnr=0<CR>", opts) -- show  diagnostics for file
 
                 opts.desc = "Show line diagnostics"
                 keymap.set("n", "<leader>d", vim.diagnostic.open_float, opts) -- show diagnostics for line
@@ -116,9 +100,7 @@ return {
             group = vim.api.nvim_create_augroup("lsp_attach_disable_ruff_hover", { clear = true }),
             callback = function(args)
                 local client = vim.lsp.get_client_by_id(args.data.client_id)
-                if client == nil then
-                    return
-                end
+                if client == nil then return end
                 if client.name == "ruff" then
                     -- Disable hover in favor of Pyright
                     client.server_capabilities.hoverProvider = false
@@ -126,12 +108,5 @@ return {
             end,
             desc = "LSP: Disable hover capability from Ruff",
         })
-
-        -- Diagnostic signs
-        -- local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
-        -- for type, icon in pairs(signs) do
-        -- 	local hl = "DiagnosticSign" .. type
-        -- 	vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
-        -- end
     end,
 }
