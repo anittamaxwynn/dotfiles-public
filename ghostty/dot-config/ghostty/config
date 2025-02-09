@@ -7,8 +7,9 @@ macos-icon-screen-color = 080c10
 macos-option-as-alt = left
 
 theme = jellybeans
+background = 282c34
 
-font-family = Zed Mono
+font-family = CaskaydiaMono Nerd Font Mono
 font-size = 26
 
 cursor-style = block
@@ -49,4 +50,4 @@ keybind = ctrl+cmd+l=resize_split:right,20
 keybind = ctrl+cmd+j=resize_split:down,20
 keybind = ctrl+cmd+k=resize_split:up,20
 
-copy-on-select = clipboard
+#copy-on-select = clipboard

@@ -10,7 +10,8 @@ vim.g.have_nerd_font = true
 vim.opt.relativenumber       = true
 vim.opt.number               = true
 
-vim.opt.smartindent          = true
+vim.opt.smartindent          = false
+vim.opt.autoindent           = true
 vim.opt.expandtab            = true
 
 vim.opt.shiftwidth           = 4
