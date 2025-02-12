@@ -2,8 +2,9 @@
 
 
 -- Global editor settings ===================================================
-vim.g.mapleader      = " "
-vim.g.maplocalleader = " "
+-- Set leader and local leader inside lazy.lua.
+-- vim.g.mapleader      = " "
+-- vim.g.maplocalleader = " "
 vim.g.have_nerd_font = true
 
 -- Option settings ==========================================================

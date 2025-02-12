@@ -6,9 +6,8 @@ return {
         style = "dark",
         italics = true,
     },
-
     config = function(_, opts)
         require("jellybeans").setup(opts)
-        vim.cmd.colorscheme("jellybeans")
+        vim.cmd([[colorscheme jellybeans]])
     end,
 }

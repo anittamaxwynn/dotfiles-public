@@ -73,17 +73,17 @@ alt-shift-l = 'move right'
 alt-minus = 'resize smart -50'
 alt-equal = 'resize smart +50'
 
-alt-shift-1 = 'workspace 1' # Arc browser
-alt-shift-2 = 'workspace 2' # Ghostty term
-alt-shift-3 = 'workspace 3' # Spotify
-alt-shift-4 = 'workspace 4' # OBS
-alt-shift-x = 'workspace X' # Extra stuff
+cmd-1 = 'workspace 1' # Arc browser
+cmd-2 = 'workspace 2' # Ghostty term
+cmd-3 = 'workspace 3' # Spotify
+cmd-4 = 'workspace 4' # OBS
+cmd-x = 'workspace X' # Extra stuff
 
-cmd-alt-shift-1 = 'move-node-to-workspace 1'
-cmd-alt-shift-2 = 'move-node-to-workspace 2'
-cmd-alt-shift-3 = 'move-node-to-workspace 3'
-cmd-alt-shift-4 = 'move-node-to-workspace 4'
-cmd-alt-shift-x = 'move-node-to-workspace X'
+cmd-shift-1 = 'move-node-to-workspace 1'
+cmd-shift-2 = 'move-node-to-workspace 2'
+cmd-shift-3 = 'move-node-to-workspace 3'
+cmd-shift-4 = 'move-node-to-workspace 4'
+cmd-shift-x = 'move-node-to-workspace X'
 
 alt-tab = 'workspace-back-and-forth'
 alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'

@@ -13,7 +13,7 @@ return {
         git = {},
         --TODO: add rename here
         scroll = {},
-        statuscolumn = {},
+        -- statuscolumn = {},
         words = {},
         styles = {},
         explorer = {
@@ -33,7 +33,7 @@ return {
                     },
                 },
             },
-            debug = { scores = true },
+            debug = { scores = false },
         },
     },
     keys = {
