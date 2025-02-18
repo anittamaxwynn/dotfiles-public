@@ -6,11 +6,13 @@ macos-icon-ghost-color = ff7279
 macos-icon-screen-color = 080c10
 macos-option-as-alt = left
 
-theme = jellybeans
-#background = 202329
+theme = Jellybeans
+#background = 303030
+background = 2f2f2f
 
 font-family = CaskaydiaMono Nerd Font Mono
-font-size = 26
+#font-family = Zed Mono
+font-size = 24
 
 cursor-style = block
 cursor-style-blink = true

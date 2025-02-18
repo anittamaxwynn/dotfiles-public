@@ -20,6 +20,7 @@ return {
             replace_netrw = true,
         },
         picker = {
+            layout = { preset = "default" },
             matcher = {
                 cwd_bonus = true,
                 frecency = true,

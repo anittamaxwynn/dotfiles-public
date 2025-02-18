@@ -1,5 +1,6 @@
 return {
     "neovim/nvim-lspconfig",
+    enabled = true,
     config = function()
         local capabilities = require("blink.cmp").get_lsp_capabilities()
         local lspconfig = require("lspconfig")
@@ -37,13 +38,13 @@ return {
             capabilities = capabilities,
             cmd = {
                 "clangd",
-                -- "--background-index",
+                "--background-index",
                 "--clang-tidy",
                 -- "--header-insertion=iwyu",
                 -- "--completion-style=detailed",
                 -- "--function-arg-placeholders",
                 -- "-j4",
-                "--fallback-style=webkit",
+                "--fallback-style=Google",
             },
         })
 

@@ -11,7 +11,7 @@ return {
 
         appearance = {
             use_nvim_cmp_as_default = true,
-            nerd_font_variant = "normal",
+            nerd_font_variant = "mono",
         },
 
         sources = {
@@ -34,9 +34,8 @@ return {
             },
 
             menu = {
-                draw = {
-                    treesitter = { "lsp" },
-                },
+                draw = { treesitter = { "lsp" } },
+                -- border = "single",
             },
 
             documentation = {
@@ -50,4 +49,5 @@ return {
             window = { border = "rounded" },
         },
     },
+    opts_extend = { "sources.default" },
 }
