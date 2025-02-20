@@ -1,10 +1,7 @@
 macos-auto-secure-input = true
 macos-window-shadow = false
-macos-icon = custom-style
-macos-icon-frame = beige
-macos-icon-ghost-color = ff7279
-macos-icon-screen-color = 080c10
 macos-option-as-alt = left
+macos-icon = retro
 
 theme = Jellybeans
 #background = 303030
