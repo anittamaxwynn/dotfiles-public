@@ -1,7 +1,9 @@
 return {
     "nvim-treesitter/nvim-treesitter",
+    version = false,
     build = ":TSUpdate",
-    event = { "BufReadPre", "BufNewFile" },
+    event = { "VeryLazy" },
+    enabled = true,
     opts = {
         highlight = { enable = true },
         indent = { enable = true },
@@ -10,7 +12,6 @@ return {
             "python",
             "c",
             "cpp",
-            "rust",
         },
     },
     config = function(_, opts) require("nvim-treesitter.configs").setup(opts) end,

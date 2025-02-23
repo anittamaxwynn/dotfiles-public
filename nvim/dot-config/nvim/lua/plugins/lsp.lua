@@ -38,13 +38,13 @@ return {
             capabilities = capabilities,
             cmd = {
                 "clangd",
-                "--background-index",
+                -- "--background-index",
                 "--clang-tidy",
-                -- "--header-insertion=iwyu",
-                -- "--completion-style=detailed",
-                -- "--function-arg-placeholders",
+                "--header-insertion=iwyu",
+                "--completion-style=detailed",
+                "--function-arg-placeholders",
                 -- "-j4",
-                "--fallback-style=Google",
+                "--fallback-style=LLVM",
             },
         })
 

@@ -3,10 +3,13 @@ return {
     priority = 1000,
     lazy = false,
     opts = {
+        animate = {},
         bigfile = {},
+        debug = {},
         dashboard = {},
         gitbrowse = {},
         lazygit = {},
+        layout = {},
         notifier = {},
         notify = {},
         git = {},
